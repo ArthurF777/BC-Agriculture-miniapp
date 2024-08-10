@@ -132,4 +132,15 @@ Page({
       this.setData({ sideBarIndex: index });
     }
   },
+  methods: {
+    onBack() {  
+      wx.navigateBack();
+    },
+    onGoHome() {
+      wx.reLaunch({
+        url: '/pages/home/home',
+      });
+    },
+  },
 });
+
